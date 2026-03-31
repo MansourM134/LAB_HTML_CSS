@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: 'inter', sans-serif;
+    background: #0f1117;
+}
+
+.main {
+    min-height: 100vh;
+    position: relative;
+    padding: 60px;
+}
+
+.corner {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 6px solid #c9b46b;
+}
+
+.top-left {
+    top: 20px;
+    left: 20px;
+    border-right: none;
+    border-bottom: none;
+}
+
+.bottom-right {
+    bottom: 20px;
+    right: 20px;
+    border-left: none;
+    border-top: none;
+}
+
+.intro{
+    border-left: 3px solid #c9b46b;
+    color: #bcbcbc;
+    max-width: 500px;
+}
+
+.intro p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.info-box {
+    padding-left: 15px;
+    border-left: 3px solid #c9b46b;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.projects a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #bcbcbc;
+    border: 1px solid #2a2d36;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: all 0.25s ease;
+}
+
+.projects a:hover {
+    color: #0f1117;
+    background: #c9b46b;
+    border-color: #c9b46b;
+    transform: translateX(-2px);
+}
+
+.timeline {
+    position: relative;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: -3px;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: #c9b46b;
+}
+
+.timeline-item  {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -9px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background: #c9b46b;
+    border-radius: 50%;
+}
+
+.timeline-date {
+    font-size: 12px;
+    color: #888;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.timeline-item h6 {
+    margin: 0;
+    font-weight: 500;
+}
+
+.timeline-item p {
+    font-size: 13px;
+    color: #bcbcbc;
+    margin: 5px 0 0;
+}
+
+.icons {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+ .icons .icon {
+    color: #888;
+    margin-left: 18px;
+    font-size: 18px;
+    transition: all 0.25s ease;
+}
+
+.icons .icon:hover {
+    color: #c9b46b;
+    transform: translateY(-2px);
+}
+
